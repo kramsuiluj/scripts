@@ -1,0 +1,4 @@
+First Name,Last Name,Organizational Unit,AddToGroups(csv),Enabled,Password
+Mark Julius,Maravillo,"OU=Experts,OU=Skills Competition,DC=WSC2019,DC=RU",Experts,TRUE,Passw0rd$
+Juan,dela Cruz,"OU=Agents,OU=Skills Competition,DC=WSC2019,DC=RU",Agent,TRUE,Passw0rd$
+Jose,Rizal,"OU=Managers,OU=Skills Competition,DC=WSC2019,DC=RU",Managers,TRUE,Passw0rd$
