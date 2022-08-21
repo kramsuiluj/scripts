@@ -34,12 +34,12 @@ foreach ($user in $users) {
         -Surname $lastname `
         -Path $ou `
         -Enabled $true `
-        -AccountPassword (ConvertTo-SecureString -AsPlainText -Force) `
+        -AccountPassword (ConvertTo-SecureString $password -AsPlainText -Force) `
         -ChangePasswordAtLogon $false
 
         if ($user.'AddToGroups(csv)' -ne '') {
             $user.'AddToGroups(csv)'.Split(',') | foreach {
-                New-AdGroupMember -Identity $_ -Members $username
+                Add-AdGroupMember -Identity $_ -Members $username
             }
         }
 
